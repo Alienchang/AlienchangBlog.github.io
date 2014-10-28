@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>FMDB | Alienchang’s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="使用资料库的第一件事，就是建立一个资料库。要注意的是，在iOS环境下，只有document directory 是可以进行读写的。在写程式时用的那个Resource资料夹底下的东西都是read-only。因此，建立的资料库要放在document 资料夹下。方法如下： 
+NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FMDB">
+<meta property="og:url" content="http://yoursite.com/2014/09/22/FMDB/">
+<meta property="og:site_name" content="Alienchang’s Blog">
+<meta property="og:description" content="使用资料库的第一件事，就是建立一个资料库。要注意的是，在iOS环境下，只有document directory 是可以进行读写的。在写程式时用的那个Resource资料夹底下的东西都是read-only。因此，建立的资料库要放在document 资料夹下。方法如下： 
+NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDi">
+<meta property="og:image" content="/img/wallpaper-2572384.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FMDB">
+<meta name="twitter:description" content="使用资料库的第一件事，就是建立一个资料库。要注意的是，在iOS环境下，只有document directory 是可以进行读写的。在写程式时用的那个Resource资料夹底下的东西都是read-only。因此，建立的资料库要放在document 资料夹下。方法如下： 
+NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDi">
+  
+    <link rel="alternative" href="/atom.xml" title="Alienchang’s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<div class="profilepic">
+			<img src="https://avatars2.githubusercontent.com/u/2024949?v=2&amp;s=150">
+		</div>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Alienchang</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">不急不躁，勇往直前</p>
+		
+
+		
+			<div class="onoffswitch">
+			    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+			    <label class="onoffswitch-label" for="myonoffswitch">
+			        <span class="onoffswitch-inner"></span>
+			        <span class="onoffswitch-switch"></span>
+			    </label>
+			</div>
+		
+
+		<div class="switch-area">
+			<section class="first-part">
+				<nav class="header-menu">
+					<ul>
+					
+						<li><a href="/">主页</a></li>
+			        
+						<li><a href="/archives">所有文章</a></li>
+			        
+					</ul>
+				</nav>
+				<nav class="header-nav">
+					<div class="social">
+						
+							<a class="github" target="_blank" href="/#" title="github">github</a>
+				        
+							<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+				        
+							<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+				        
+							<a class="facebook" target="_blank" href="/#" title="facebook">facebook</a>
+				        
+					</div>
+				</nav>
+			</section>
+			
+			
+			<section class="second-part">
+				<div class="widget tagcloud">
+					<a href="/tags/code/" style="font-size: 15.00px;">code</a><a href="/tags/ios/" style="font-size: 20.00px;">ios</a><a href="/tags/news/" style="font-size: 10.00px;">news</a><a href="/tags/日记/" style="font-size: 10.00px;">日记</a><a href="/tags/随笔/" style="font-size: 10.00px;">随笔</a>
+				</div>
+			</section>
+			
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay"></div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="https://avatars2.githubusercontent.com/u/2024949?v=2&amp;s=150">
+			</div>
+
+			<hgroup>
+			  <h1 class="header-author"><a href="/">Alienchang</a></h1>
+			</hgroup>
+			
+			<p class="header-subtitle">不急不躁，勇往直前</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="facebook" target="_blank" href="/#" title="facebook">facebook</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <article id="post-FMDB" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2014/09/22/FMDB/" class="article-date">
+  	<time datetime="2014-09-22T06:29:46.000Z" itemprop="datePublished">9月 22 2014</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ios/">ios</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      FMDB
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>使用资料库的第一件事，就是建立一个资料库。要注意的是，在iOS环境下，只有document directory 是可以进行读写的。在写程式时用的那个Resource资料夹底下的东西都是read-only。因此，建立的资料库要放在document 资料夹下。方法如下： </p>
+<p>NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);<br>NSString *documentDirectory = [paths objectAtIndex:0];<br>NSString *dbPath = [documentDirectory stringByAppendingPathComponent:@”MyDatabase.db”];<br>FMDatabase *db = [FMDatabase databaseWithPath:dbPath] ;<br>if (![db open]) {<br>   NSLog(@“Could not open db.”);<br>   return ;<br>}</p>
+<p>建立table<br>如果是新建的资料库档，一开始是没有table的。建立table的方式很简单：</p>
+<p>[db executeUpdate:@”CREATE TABLE PersonList (Name text, Age integer, Sex integer, Phone text, Address text, Photo blob)”];<br>这是FMDB裡很常用的指令，[FMDatabase_object executeUpdate:]后面用NSString塞入SQLite语法，就解决了。因為这篇主要是在讲FMDB，所以SQLite的语法就不多说了，上述程式码建立了一个名為PersonList的table，裡面有姓名、年龄、性别、电话、地址和照片。（嗯….很范例的一个table）<br>－插入资料<br>插入资料跟前面一样，用executeUpdate后面加语法就可以了。比较不同的是，因為插入的资料会跟Objective-C的变数有关，所以在string裡使用?号来代表这些变数。<br>[db executeUpdate:@”INSERT INTO PersonList (Name, Age, Sex, Phone, Address, Photo) VALUES (?,?,?,?,?,?)”,</p>
+<p>@”Jone”, [NSNumber numberWithInt:20], [NSNumber numberWithInt:0], @“091234567”, @“Taiwan, R.O.C”, [NSData dataWithContentsOfFile: filepath]];<br>其中，在SQLite中的text对应到的是NSString，integer对应NSNumber，blob则是NSData。该做的转换FMDB都做好了，只要了解SQLite语法，应该没有什麼问题才是。<br>－更新资料<br>太简单了，不想讲，请看范例：<br>[db executeUpdate:@”UPDATE PersonList SET Age = ? WHERE Name = ?”,[NSNumber numberWithInt:30],@“John”];<br>－取得资料<br>取得特定的资料，则需使用FMResultSet物件接收传回的内容：<br>FMResultSet *rs = [db executeQuery:@”SELECT Name, Age, FROM PersonList”];</p>
+<p>while ([rs next]) {<br>NSString *name = [rs stringForColumn:@”Name”];<br>int age = [rs intForColumn:@”Age”];<br>}</p>
+<p>[rs close];<br>用[rs next]可以轮询query回来的资料，每一次的next可以得到一个row裡对应的数值，并用[rs stringForColumn:]或[rs intForColumn:]等方法把值转成Object-C的型态。取用完资料后则用[rs close]把结果关闭。<br>－快速取得资料<br>在有些时候，只会query某一个row裡特定的一个数值（比方只是要找John的年龄），FMDB提供了几个比较简便的方法。这些方法定义在FMDatabaseAdditions.h，如果要使用，记得先import进来。<br>view sourceprint<br>//找地址<br>NSString *address = [db stringForQuery:@”SELECT Address FROM PersonList WHERE Name = ?”,@”John”];</p>
+<p>//找年齡<br>int age = [db intForQuery:@”SELECT Age FROM PersonList WHERE Name = ?”,@”John”];</p>
+<p>photos:<br><img src="/img/wallpaper-2572384.jpg" style="width: 300px;"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2014/09/23/xcode5国际化配置/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          xcode5国际化配置
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2014/09/21/iOS国际区号/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iOS国际区号</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="FMDB" data-title="FMDB" data-url="http://yoursite.com/2014/09/22/FMDB/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2014 Alienchang
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
